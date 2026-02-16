@@ -66,7 +66,12 @@ After running the DAG:
 
 ```sql
 SELECT * FROM v_org_headcount;
-
+ org_id | org_name         | people_count
+--------+------------------+--------------
+ o_001  | Nimbus Analytics |            2
+ o_002  | Vertex Labs      |            1
+(2 rows)
+```
 ---
 
 ## 🐳 Quickstart
@@ -74,16 +79,19 @@ SELECT * FROM v_org_headcount;
 ### Requirements
 - Docker + Docker Compose
 
-### Run
+### Run the stack
 ```bash
 git clone <YOUR_REPO_URL>
 cd ai-data-engineering-etl
 docker compose up --build
-
-Open the link:
+```
+### Access Airflow UI
+Open:
 http://localhost:8080
-Username: airflow
-Passwork: 
 
-Trigger the DAG
+Login Credentials:
+Username: airflow
+Password: airflow 
+
+Enable and trigger the DAG:
 etl_people_org_pipeline
