@@ -1,0 +1,67 @@
+{
+  "people": [
+    {
+      "person_id": "p_001",
+      "full_name": "Ava Chen",
+      "email": "ava.chen@example.com",
+      "title": "Software Engineer",
+      "source": "synthetic"
+    },
+    {
+      "person_id": "p_002",
+      "full_name": "Noah Patel",
+      "email": "noah.patel@example.com",
+      "title": "Data Engineer",
+      "source": "synthetic"
+    },
+    {
+      "person_id": "p_003",
+      "full_name": "Sophia Martinez",
+      "email": "sophia.martinez@example.com",
+      "title": "Product Manager",
+      "source": "synthetic"
+    }
+  ],
+  "organizations": [
+    {
+      "org_id": "o_001",
+      "org_name": "Nimbus Analytics",
+      "domain": "nimbusanalytics.com",
+      "industry": "Data & AI",
+      "source": "synthetic"
+    },
+    {
+      "org_id": "o_002",
+      "org_name": "Vertex Labs",
+      "domain": "vertexlabs.io",
+      "industry": "Cloud Infrastructure",
+      "source": "synthetic"
+    }
+  ],
+  "edges": [
+    {
+      "person_id": "p_001",
+      "org_id": "o_001",
+      "role": "Software Engineer",
+      "start_date": "2023-05-01",
+      "end_date": null,
+      "confidence": 0.93
+    },
+    {
+      "person_id": "p_002",
+      "org_id": "o_001",
+      "role": "Data Engineer",
+      "start_date": "2022-08-15",
+      "end_date": null,
+      "confidence": 0.96
+    },
+    {
+      "person_id": "p_003",
+      "org_id": "o_002",
+      "role": "Product Manager",
+      "start_date": "2024-01-10",
+      "end_date": null,
+      "confidence": 0.91
+    }
+  ]
+}
